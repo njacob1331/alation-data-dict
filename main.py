@@ -15,3 +15,4 @@ for record in client.api_response():
     dictionary.add(record)
 
 dictionary.save()
+print(dictionary.fuzzy_lookup("something", threshold=90))
